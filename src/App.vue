@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view> </router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
+<style scoped></style>
 <style>
+/* 暗黑主题 */
+:root {
+  --theme--font-color: white;
+  --theme--bg-color: #212124;
+  --theme--bg-color2: #28282b;
+  --theme--bg-color3:#383838;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+}
+ul,
+li {
+  list-style: none;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+}
+html {
+  height: 100%;
+  background-color: black;
 }
 </style>
