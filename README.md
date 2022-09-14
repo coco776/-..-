@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # -..-
 =======
 # project1
@@ -49,3 +50,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ![image](https://user-images.githubusercontent.com/81366527/180118370-ab01c1ad-1e14-4cd0-96ef-3b348f5a1139.png)
 >>>>>>> eff50a9f2e56b2400bb3daa56442f64a3463fdfa
 >>>>>>> master
+=======
+# 主代码位于master分支
+>>>>>>> e2d393605f94047ed2ed49825e3b78ab53a77d9e
