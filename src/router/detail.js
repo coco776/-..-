@@ -1,0 +1,27 @@
+export default { 
+    //使用params参数需要占位！
+    path:'/detail',
+    redirect:'detail/listshow/:id',
+    component:()=>import('@/views/Detail/Index.vue'),
+    name:'detail',
+    children:[
+        {
+            name:'listshow',
+            path:'listshow/:id',
+            component:()=>import('@/views/Detail/childComps/listInfo.vue')
+        },
+        {
+            name:"comment",
+            path:'comment/:id',
+            component:()=>import('@/components/Detail/Comment.vue'),
+            meta:{
+                type:2
+            }
+        },
+        {
+            name:"collect",
+            path:'collect/:id',
+            component:()=>import('@/views/Detail/childComps/Collect.vue')
+        }
+    ]
+}
